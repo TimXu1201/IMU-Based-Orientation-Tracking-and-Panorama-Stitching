@@ -1,6 +1,6 @@
 # IMU-Based Orientation Tracking and Panorama Stitching
 
-This repository contains my ECE 276A Project 1 work on **IMU-based orientation estimation** and **panorama generation from synchronized camera frames**.
+This repository contains my work on **IMU-based orientation estimation** and **panorama generation from synchronized camera frames**.
 
 The project combines sensor calibration, quaternion-based motion propagation, optimization-based refinement, and image reprojection into a single pipeline for inertial perception and visual scene reconstruction.
 
