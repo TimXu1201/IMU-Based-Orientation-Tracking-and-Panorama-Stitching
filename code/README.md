@@ -1,27 +1,32 @@
-# ECE 276A Project 1: Orientation Tracking
+# Orientation Tracking Code
 
-## Files Included
-* `project_1.py`: The main source code for orientation tracking and panorama stitching.
-* `README.md`: This file.
+This folder contains the implementation used for IMU-based orientation tracking and panorama stitching.
 
-## Prerequisites
-The code requires Python 3 and the following libraries:
-* numpy
-* matplotlib
-* torch (PyTorch)
+## Main File
 
-## Path
-Make sure change the "data_root" in `project_1.py` according to your own pc.
+- `project_1.py`
 
-The code assumes the data is stored in a data folder in the same directory as the script. Please ensure your directory looks like this:
+## Dependencies
 
-/Project_1_Folder
-    |-- project_1.py
-    |-- data/
-        |-- trainset/
-            |-- imu/
-            |-- cam/
-            |-- vicon/
-        |-- testset/
-            |-- imu/
-            |-- cam/
+- numpy
+- matplotlib
+- torch
+
+## Data Layout
+
+Update the `data_root` variable in `project_1.py` to match your local dataset location.
+
+Expected layout:
+
+```text
+Project_1_Folder/
+|-- project_1.py
+`-- data/
+    |-- trainset/
+    |   |-- imu/
+    |   |-- cam/
+    |   `-- vicon/
+    `-- testset/
+        |-- imu/
+        `-- cam/
+```

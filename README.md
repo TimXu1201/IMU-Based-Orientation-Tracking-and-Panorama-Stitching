@@ -1,15 +1,15 @@
 # IMU-Based Orientation Tracking and Panorama Stitching
 
-This repository contains my work on **IMU-based orientation estimation** and **panorama generation from synchronized camera frames**.
+This repository presents an end-to-end workflow for **IMU-based orientation estimation** and **panorama generation from synchronized camera frames**.
 
-The project combines sensor calibration, quaternion-based motion propagation, optimization-based refinement, and image reprojection into a single pipeline for inertial perception and visual scene reconstruction.
+The implementation combines sensor calibration, quaternion-based motion propagation, optimization-based refinement, and image reprojection into a single visual-inertial pipeline.
 
 ## Project Highlights
 
 - IMU bias calibration for accelerometer and gyroscope measurements
 - quaternion-based orientation propagation from angular velocity
 - projected gradient descent refinement using accelerometer observations
-- Euler-angle visualization and comparison against Vicon ground truth
+- Euler-angle visualization and comparison against reference motion
 - panorama stitching from camera frames using the estimated orientation trajectory
 
 ## Repository Structure
@@ -17,13 +17,13 @@ The project combines sensor calibration, quaternion-based motion propagation, op
 - `code/project_1.py`
   Main implementation for orientation tracking and panorama generation.
 - `docs/`
-  Supporting sensor-reference material.
+  Supporting technical references for the sensor setup.
 - `orientation_*.png`
   Selected orientation-tracking result figures.
 - `panorama_*.png`
   Selected panorama outputs and comparisons.
-- `276A_project1.pdf`
-  Project report.
+- `report.pdf`
+  Project Description.
 
 ## Environment
 
@@ -36,6 +36,6 @@ Typical dependencies:
 
 ## Notes
 
-- The original script uses a local Windows path for the course dataset. Update the `data_root` path in `code/project_1.py` before rerunning.
-- Raw IMU, camera, and Vicon data are not included in the public repository.
-- Selected output figures are kept to make the repository easier to browse as a portfolio project.
+- `code/project_1.py` still uses a local Windows dataset path and may need a quick path update before rerunning.
+- Raw IMU, camera, and reference-motion datasets are not included in the public repository.
+- Representative output figures are kept to make the repository easier to browse.
